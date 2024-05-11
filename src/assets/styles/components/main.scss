@@ -1,3 +1,15 @@
->.container {
-    flex-direction: column;
+main {
+    .hero {
+        width: 100%;
+
+        img {
+            width: 100%;
+            object-position: top;
+            object-fit: cover;
+        }
+    }
+
+    >.container {
+        flex-direction: column;
+    }
 }
