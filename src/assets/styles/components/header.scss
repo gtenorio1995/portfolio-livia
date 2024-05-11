@@ -1,0 +1,118 @@
+// Imports config
+@use 'sass:math';
+@use '../config/variables';
+
+// functions
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+// ___________________________________________________________________________//
+header {
+    width: 100%;
+    background-color: variables.$grayDark;
+    position: fixed;
+    z-index: 10;
+
+    .container {
+        justify-content: space-between;
+
+        nav {
+            display: flex;
+            align-items: center;
+
+            button {
+                display: flex;
+                padding-block: converter(24);
+                flex-direction: column;
+                row-gap: converter(4);
+                width: converter(40);
+                background: transparent;
+                border: none;
+
+                span {
+                    height: converter(2);
+                    display: block;
+                    transition: 0.4s;
+
+                    &:nth-child(1) {
+                        width: converter(24);
+                        background: variables.$white;
+                    }
+
+                    &:nth-child(2) {
+                        width: converter(32);
+                        background: variables.$red;
+                    }
+
+                    &:nth-child(3) {
+                        width: converter(16);
+                        background: variables.$white;
+                    }
+                }
+
+                &.active {
+                    span {
+                        &:nth-child(1) {
+                            width: converter(32);
+                            transform: translate3d(-5px, 5px, 0) rotate(45deg);
+                            background: variables.$red;
+                        }
+
+                        &:nth-child(2) {
+                            width: converter(0);
+                            background: variables.$red;
+                        }
+
+                        &:nth-child(3) {
+                            width: converter(32);
+                            transform: translate3d(-5px, -7px, 0) rotate(-45deg);
+                            background: variables.$red;
+                        }
+                    }
+                }
+            }
+
+            ul {
+                display: flex;
+                position: absolute;
+                flex-direction: column;
+                background-color: variables.$grayDark;
+                top: converter(60);
+                left: 0;
+                justify-content: start;
+                height: 100vh;
+                align-items: center;
+                width: 100%;
+                z-index: 10;
+                transform: translate3d(-100%, 0, 0);
+                transition: transform 0.4s ease-in-out;
+                gap: 0;
+
+                li {
+                    width: 100%;
+                    text-align: center;
+                    padding-block: converter(35);
+
+                    a {
+                        color: variables.$white;
+                    }
+
+                    &:hover {
+                        background-color: variables.$red;
+                    }
+                }
+
+                &.openMenu {
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+
+        .brand {
+            width: converter(32);
+            display: flex;
+            align-items: center;
+        }
+    }
+}

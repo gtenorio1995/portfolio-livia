@@ -1,0 +1,18 @@
+// Imports config
+@use './config/reset';
+@use './config/variables';
+@use 'sass:math';
+
+// Imports components
+@use './components/header';
+@use './components/main';
+
+
+// functions
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+// mixins
+
+// ___________________________________________________________________________//
