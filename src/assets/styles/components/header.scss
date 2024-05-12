@@ -99,9 +99,11 @@ header {
 
                     a {
                         color: variables.$white;
+                        padding-inline: converter(96);
+                        padding-block: converter(32);
                     }
 
-                    &:hover {
+                    &.selected {
                         background-color: variables.$red;
                     }
                 }

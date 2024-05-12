@@ -5,6 +5,11 @@
   font-family: "Open Sans", sans-serif;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -159,8 +164,10 @@ header > .container nav ul li {
 }
 header > .container nav ul li a {
   color: #fff;
+  padding-inline: 6rem;
+  padding-block: 2rem;
 }
-header > .container nav ul li:hover {
+header > .container nav ul li.selected {
   background-color: #DC3545;
 }
 header > .container nav ul.openMenu {
@@ -333,6 +340,7 @@ header > .container .brand {
 #reviews .container .cards-review {
   margin-top: 2rem;
   display: flex;
+  justify-content: center;
 }
 #reviews .container .cards-review .card-review {
   width: 300px;
@@ -479,6 +487,7 @@ main .hero div {
 main .hero div h1 {
   font-size: 2rem;
   font-weight: bold;
+  color: #fff;
 }
 main .hero div .second-title {
   font-weight: 600;
