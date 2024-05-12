@@ -1,0 +1,92 @@
+// Imports config
+@use 'sass:math';
+@use '../config/variables';
+
+// functions
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+// ___________________________________________
+#about {
+    width: 100%;
+
+    >.container {
+        flex-direction: column;
+
+        picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: converter(24) 0;
+
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 150px;
+                object-fit: cover;
+                object-position: top;
+                border: converter(2) solid variables.$red;
+            }
+        }
+
+        h3 {
+            margin: converter(8) 0;
+        }
+
+        hr {
+            width: 100%;
+            margin: converter(16) 0;
+            border: 1px solid variables.$grayDark2;
+        }
+
+        .dados {
+            display: flex;
+            flex-direction: column;
+            row-gap: converter(8);
+            margin-bottom: converter(16);
+        }
+
+        .btns {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-start;
+            row-gap: converter(16);
+
+            button {
+                padding: converter(8) converter(16);
+                border-radius: converter(24);
+                border: none;
+            }
+
+            .btn-red {
+                background-color: variables.$red;
+                color: variables.$white;
+                font-size: converter(16);
+                font-weight: 400;
+                opacity: 0.9;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .btn-gray {
+                background-color: variables.$gray;
+                font-size: converter(16);
+                font-weight: 400;
+                opacity: 0.9;
+
+                a {
+                    color: variables.$grayDark;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+}
