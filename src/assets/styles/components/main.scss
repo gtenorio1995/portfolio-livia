@@ -1,11 +1,48 @@
+// Imports config
+@use 'sass:math';
+@use '../config/variables';
+
+// Imports components
+@use './sec-about';
+@use './sec-services';
+@use './div-hireme';
+@use './sec-works';
+@use './sec-reviews';
+@use './sec-contact';
+@use './sec-location';
+
+// functions
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
 main {
     .hero {
         width: 100%;
+        position: relative;
 
         img {
+            margin-top: converter(48);
             width: 100%;
             object-position: top;
             object-fit: cover;
+        }
+
+        div {
+            position: absolute;
+            bottom: converter(80);
+            width: 100%;
+            text-align: center;
+
+            h1 {
+                font-size: converter(32);
+                font-weight: bold;
+            }
+
+            .second-title {
+                font-weight: 600;
+                text-transform: uppercase;
+            }
         }
     }
 

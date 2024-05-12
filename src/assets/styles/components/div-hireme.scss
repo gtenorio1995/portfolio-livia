@@ -1,0 +1,40 @@
+// Imports config
+@use 'sass:math';
+@use '../config/variables';
+
+// functions
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+// ___________________________________________
+.hire-me {
+    width: 100%;
+    background-color: variables.$grayDark;
+
+    >.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        padding: converter(60) converter(16);
+        color: variables.$white;
+        row-gap: converter(16);
+
+        p {
+            text-align: center;
+        }
+
+        .btn-red {
+            border-radius: converter(16);
+            padding: converter(8) converter(24);
+            width: 150px;
+            border: none;
+
+            a {
+                color: variables.$white;
+            }
+        }
+    }
+}

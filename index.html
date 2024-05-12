@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Livia Maria | Arquitetura e Urbanismo</title>
     <link rel="stylesheet" href="./build/styles/global.css">
 </head>
@@ -53,16 +55,21 @@
         <main>
             <div class="hero">
                 <picture>
-                    <img src="./src/assets/img/Captura de tela 2024-05-11 032637.png" alt="Imagem Livia">
+                    <img src="./src/assets/img/livia_bg.png" alt="Imagem Livia">
                 </picture>
+                <div>
+                    <h1>Lívia <span class="red">Maria</span></h1>
+                    <span class="red second-title">Arquiteta</span>
+                </div>
             </div>
-            <div class="container">
-                <section id="about">
+            <!-- SECTION ABOUT -->
+            <section id="about">
+                <div class="container">
                     <div class="title__section">
                         <h2>Sobre mim</h2>
                     </div>
                     <picture>
-                        <img src="" alt="avatar Livia">
+                        <img src="./src/assets/img/Captura de tela 2024-05-11 032637.png" alt="avatar Livia">
                     </picture>
                     <h4>
                         Quem sou eu ?
@@ -86,22 +93,29 @@
                             Idade: 26 anos
                         </span>
                         <span>
-                            email: email-da-livia@gmail.com
+                            email: <span class="red">email-da-livia@gmail.com</span>
                         </span>
                         <span>
                             Cidade: Maceió / AL
                         </span>
                     </div>
-                    <button type="button">
-                        Download CV
-                    </button>
-                    <button type="button">
-                        <a href="#works">
-                            Meus Trabalhos
-                        </a>
-                    </button>
-                </section>
-                <section id="services">
+                    <div class="btns">
+                        <button type="button" class="btn-red">
+                            Download CV
+                        </button>
+                        <button type="button" class="btn-gray">
+                            <a href="#works">
+                                Meus Trabalhos
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION ABOUT -->
+
+            <!-- SECTION SERVICES -->
+            <section id="services">
+                <div class="container">
                     <div class="title__section">
                         <h2>Meus Serviços</h2>
                         <h4>
@@ -111,7 +125,7 @@
                     <div class="cards">
                         <div class="card">
                             <picture>
-                                <img src="" alt="card-revit">
+                                <img src="./src/assets/img/revit.svg" alt="card-revit">
                             </picture>
                             <span>
                                 Utilização do melhor software para gestão de projetos do mercado, garantindo maior
@@ -120,7 +134,7 @@
                         </div>
                         <div class="card">
                             <picture>
-                                <img src="" alt="card-escape">
+                                <img src="./src/assets/img/enscape.svg" alt="card-escape">
                             </picture>
                             <span>
                                 Utilização do melhor software para gestão de projetos do mercado, garantindo maior
@@ -129,7 +143,7 @@
                         </div>
                         <div class="card">
                             <picture>
-                                <img src="" alt="card-autocad">
+                                <img src="./src/assets/img/autocad.svg" alt="card-autocad">
                             </picture>
                             <span>
                                 Utilização do melhor software para gestão de projetos do mercado, garantindo maior
@@ -138,7 +152,7 @@
                         </div>
                         <div class="card">
                             <picture>
-                                <img src="" alt="card-twinmotion">
+                                <img src="./src/assets/img/twinmotion.svg" alt="card-twinmotion">
                             </picture>
                             <span>
                                 Utilização do melhor software para gestão de projetos do mercado, garantindo maior
@@ -146,19 +160,28 @@
                             </span>
                         </div>
                     </div>
-                </section>
-                <div class="hire-me">
+                </div>
+            </section>
+            <!-- SECTION SERVICES -->
+
+
+            <div class="hire-me">
+                <div class="container">
                     <h2>Vamos trabalhar juntos!</h2>
                     <p>
                         Estou disponível para projectos em regime de freelance. Contrate-me e realize o seu projeto.
                     </p>
-                    <button type="button">
+                    <button type="button" class="btn-red">
                         <a href="#contact">
                             Me contrate!
                         </a>
                     </button>
                 </div>
-                <section id="works">
+            </div>
+
+            <!-- SECTION WORKS -->
+            <section id="works">
+                <div class="container">
                     <div class="title__section">
                         <h2>Portfolio</h2>
                         <h4>Apresentando alguns dos meus melhores trabalhos</h4>
@@ -186,78 +209,113 @@
                         </li>
                     </ul>
                     <div class="portfolio-images">
-                        <img src="" alt="img-01">
-                        <img src="" alt="img-02">
-                        <img src="" alt="img-03">
-                        <img src="" alt="img-04">
-                        <img src="" alt="img-05">
-                        <img src="" alt="img-06">
+                        <img src="./src/assets/img/sala-1.webp" alt="sala-01">
+                        <img src="./src/assets/img/sala-2.webp" alt="sala-02">
+                        <img src="./src/assets/img/quarto-1.webp" alt="quarto-01">
+                        <img src="./src/assets/img/quarto-2.webp" alt="quarto-02">
+                        <img src="./src/assets/img/cozinha-1.webp" alt="cozinha-01">
+                        <img src="./src/assets/img/cozinha-2.webp" alt="cozinha-02">
                     </div>
-                </section>
-                <section id="reviews">
+                </div>
+            </section>
+            <!-- SECTION WORKS -->
+
+            <!-- SECTION REVIEWS -->
+            <section id="reviews">
+                <div class="container">
                     <div class="title__section">
                         <h2>Avaliações</h2>
                         <h4>O que os meus clientes pensam sobre mim</h4>
                     </div>
                     <div class="cards-review">
                         <div class="card-review">
-                            <span>"</span>
+                            <span>
+                                <img src="./src/assets/img/aspas.svg" alt="aspas">
+                            </span>
                             <p>
                                 A Lívia fez e faz um excelente trabalho criativo. Rápido e profissional. Recomendo
                                 vivamente e voltarei a trabalhar com ela.
                             </p>
                             <picture>
-                                <img src="" alt="avatar-review-01">
+                                <img src="./src/assets/img/review-gabriel.png" alt="avatar-review-01">
                             </picture>
                             <span class="author">
                                 Gabriel Tenório
                             </span>
-                            <span class="marks"></span>
                         </div>
                     </div>
-                </section>
-                <section id="contact">
+                    <div class="marks">
+                        <span class="mark clicked"></span>
+                        <span class="mark"></span>
+                        <span class="mark"></span>
+                        <span class="mark"></span>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION REVIEWS -->
+
+            <!-- SECTION CONTACT -->
+            <section id="contact">
+                <div class="container">
                     <div class="title__section">
                         <h2>Entre em contato</h2>
                         <h4>Fique à vontade para entrar em contato comigo a qualquer momento.</h4>
                     </div>
                     <form>
-                        <input type="text" name="Nome" id="input__name" placeholder="Digite seu nome">
-                        <input type="email" name="email" id="input__email" placeholder="Digite seu email">
+                        <input type="text" name="Nome" id="input__name" placeholder="Digite seu nome" required>
+                        <input type="email" name="email" id="input__email" placeholder="Digite seu email" required>
                         <input type="text" name="Assunto" id="input__subject" placeholder="Digite qual o assunto">
-                        <textarea name="text-area" id="text-area" placeholder="Digite sua mensagem aqui"></textarea>
-                        <input type="submit" value="Enviar Mensagem">
+                        <textarea name="text-area" id="text-area" placeholder="Digite sua mensagem aqui"
+                            required></textarea>
+                        <button type="submit" class="btn-red">Enviar Mensagem</button>
                     </form>
-                </section>
-                <section>
+                </div>
+            </section>
+            <section id="location">
+                <div class="container">
                     <div class="maps">
-                        <img src="" alt="mapa">
-                        <span class="address"></span>
+                        <span class="material-symbols-outlined">
+                            map
+                        </span>
+                        <address>
+                            Rua A, Nº 123, Serraria, Maceió - AL
+                        </address>
                     </div>
                     <div class="tel">
-                        <img src="" alt="telefone">
-                        <span class="phone"></span>
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                        <span class="phone">
+                            (82) 9 9999 - 9999
+                        </span>
                     </div>
                     <div class="email">
-                        <img src="" alt="email">
-                        <span class="email"></span>
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <span class="email">
+                            email-da-livia@gmail.com
+                        </span>
                     </div>
-                </section>
-                <hr>
-            </div>
-        </main>
-        <footer>
-            <div class="container">
-                <div class="redes">
-                    <img src="" alt="Instagram">
-                    <img src="" alt="Facebook">
-                    <img src="" alt="Twitter">
                 </div>
-                <div class="copy">
-                    <span>Copyright &copy;</span> 2024 Gabriel Tenório, all rights reserved.
-                </div>
+            </section>
+            <!-- SECTION CONTACT -->
+            <hr>
+    </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="redes">
+                <img src="" alt="Instagram">
+                <img src="" alt="Facebook">
+                <img src="" alt="Twitter">
             </div>
-        </footer>
+            <div class="copy">
+                <span>Copyright &copy;</span>
+                <p>2024 Gabriel Tenório, all rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     </div>
     <script src="./src/assets/scripts/script.js"></script>
 </body>
