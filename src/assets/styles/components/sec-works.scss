@@ -1,0 +1,49 @@
+// Imports config
+@use 'sass:math';
+@use '../config/variables';
+
+// functions
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+// ___________________________________________
+#works {
+    width: 100%;
+
+    .container {
+        ul {
+            margin-top: converter(32);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            padding-bottom: converter(16);
+
+            li {
+
+                a {
+                    color: variables.$grayDark;
+
+                    &:hover {
+                        color: variables.$red;
+                    }
+                }
+            }
+        }
+
+        .portfolio-images {
+            display: flex;
+            flex-flow: row wrap;
+            column-gap: converter(16);
+            row-gap: converter(16);
+
+            img {
+                width: 136px;
+                height: 136px;
+                object-fit: cover;
+                object-position: left;
+            }
+        }
+    }
+}

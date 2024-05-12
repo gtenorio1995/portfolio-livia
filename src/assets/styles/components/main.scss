@@ -5,6 +5,8 @@
 // Imports components
 @use './sec-about';
 @use './sec-services';
+@use './div-hireme';
+@use './sec-works';
 
 // functions
 @function converter($px) {
