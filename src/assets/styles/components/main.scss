@@ -7,6 +7,9 @@
 @use './sec-services';
 @use './div-hireme';
 @use './sec-works';
+@use './sec-reviews';
+@use './sec-contact';
+@use './sec-location';
 
 // functions
 @function converter($px) {

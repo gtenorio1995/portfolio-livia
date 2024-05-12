@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Livia Maria | Arquitetura e Urbanismo</title>
     <link rel="stylesheet" href="./build/styles/global.css">
 </head>
@@ -227,19 +229,26 @@
                     </div>
                     <div class="cards-review">
                         <div class="card-review">
-                            <span>"</span>
+                            <span>
+                                <img src="./src/assets/img/aspas.svg" alt="aspas">
+                            </span>
                             <p>
                                 A Lívia fez e faz um excelente trabalho criativo. Rápido e profissional. Recomendo
                                 vivamente e voltarei a trabalhar com ela.
                             </p>
                             <picture>
-                                <img src="" alt="avatar-review-01">
+                                <img src="./src/assets/img/review-gabriel.png" alt="avatar-review-01">
                             </picture>
                             <span class="author">
                                 Gabriel Tenório
                             </span>
-                            <span class="marks"></span>
                         </div>
+                    </div>
+                    <div class="marks">
+                        <span class="mark clicked"></span>
+                        <span class="mark"></span>
+                        <span class="mark"></span>
+                        <span class="mark"></span>
                     </div>
                 </div>
             </section>
@@ -247,30 +256,47 @@
 
             <!-- SECTION CONTACT -->
             <section id="contact">
-                <div class="title__section">
-                    <h2>Entre em contato</h2>
-                    <h4>Fique à vontade para entrar em contato comigo a qualquer momento.</h4>
+                <div class="container">
+                    <div class="title__section">
+                        <h2>Entre em contato</h2>
+                        <h4>Fique à vontade para entrar em contato comigo a qualquer momento.</h4>
+                    </div>
+                    <form>
+                        <input type="text" name="Nome" id="input__name" placeholder="Digite seu nome" required>
+                        <input type="email" name="email" id="input__email" placeholder="Digite seu email" required>
+                        <input type="text" name="Assunto" id="input__subject" placeholder="Digite qual o assunto">
+                        <textarea name="text-area" id="text-area" placeholder="Digite sua mensagem aqui"
+                            required></textarea>
+                        <button type="submit" class="btn-red">Enviar Mensagem</button>
+                    </form>
                 </div>
-                <form>
-                    <input type="text" name="Nome" id="input__name" placeholder="Digite seu nome">
-                    <input type="email" name="email" id="input__email" placeholder="Digite seu email">
-                    <input type="text" name="Assunto" id="input__subject" placeholder="Digite qual o assunto">
-                    <textarea name="text-area" id="text-area" placeholder="Digite sua mensagem aqui"></textarea>
-                    <input type="submit" value="Enviar Mensagem">
-                </form>
             </section>
-            <section>
-                <div class="maps">
-                    <img src="" alt="mapa">
-                    <span class="address"></span>
-                </div>
-                <div class="tel">
-                    <img src="" alt="telefone">
-                    <span class="phone"></span>
-                </div>
-                <div class="email">
-                    <img src="" alt="email">
-                    <span class="email"></span>
+            <section id="location">
+                <div class="container">
+                    <div class="maps">
+                        <span class="material-symbols-outlined">
+                            map
+                        </span>
+                        <address>
+                            Rua A, Nº 123, Serraria, Maceió - AL
+                        </address>
+                    </div>
+                    <div class="tel">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                        <span class="phone">
+                            (82) 9 9999 - 9999
+                        </span>
+                    </div>
+                    <div class="email">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <span class="email">
+                            email-da-livia@gmail.com
+                        </span>
+                    </div>
                 </div>
             </section>
             <!-- SECTION CONTACT -->
