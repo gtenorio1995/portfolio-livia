@@ -1,0 +1,38 @@
+// Imports config
+@use 'sass:math';
+@use '../config/variables';
+
+// functions
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+// ______________________________________________________________
+#services {
+    width: 100%;
+    background-color: variables.$gray;
+
+    .cards {
+        margin-top: converter(32);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: converter(20);
+
+        .card {
+            border-radius: converter(8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: converter(16);
+            background-color: variables.$white;
+            row-gap: converter(16);
+
+            span {
+                text-align: justify;
+            }
+        }
+    }
+}

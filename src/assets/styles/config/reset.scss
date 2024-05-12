@@ -1,5 +1,6 @@
 // Imports
 @use 'sass:math';
+@use './variables';
 
 // functions
 @function converter($px) {
@@ -23,7 +24,7 @@ body {
 }
 
 section {
-    padding-top: converter(40);
+    padding-top: converter(60);
 }
 
 a {
@@ -34,10 +35,49 @@ li {
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+span,
+p {
+    &::selection {
+        background-color: variables.$red;
+        color: variables.$white;
+    }
+}
+
+h2 {
+    font-size: converter(24);
+    font-weight: 700;
+    margin-bottom: converter(8);
+}
+
+h3 {
+    font-size: converter(20);
+    font-weight: 600;
+}
+
+h4 {
+    font-size: converter(14);
+    color: variables.$red;
+}
+
+p {
+    text-align: justify;
+    font-size: converter(16);
+    font-weight: 400;
+}
+
+.red {
+    color: variables.$red;
+}
+
 .container {
     min-width: 320px;
     width: 100%;
-    padding: 0 converter(16);
+    padding: 0 converter(16) converter(20);
 
     display: flex;
+    flex-direction: column;
 }
