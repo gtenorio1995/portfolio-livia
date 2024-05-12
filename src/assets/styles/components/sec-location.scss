@@ -11,6 +11,11 @@
 #location {
     width: 100%;
     background-color: variables.$grayDark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: converter(60);
 
     .container {
         row-gap: converter(24);
