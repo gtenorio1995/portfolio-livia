@@ -34,6 +34,7 @@
 
         .portfolio-images {
             display: flex;
+            justify-content: center;
             flex-flow: row wrap;
             column-gap: converter(16);
             row-gap: converter(16);
