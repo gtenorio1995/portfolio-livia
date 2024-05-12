@@ -81,3 +81,15 @@ p {
     display: flex;
     flex-direction: column;
 }
+
+.btn-red {
+    background-color: variables.$red;
+    color: variables.$white;
+    font-size: converter(16);
+    font-weight: 400;
+    opacity: 0.9;
+
+    &:hover {
+        opacity: 1;
+    }
+}

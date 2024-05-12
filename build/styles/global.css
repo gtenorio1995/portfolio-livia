@@ -69,6 +69,17 @@ p {
   flex-direction: column;
 }
 
+.btn-red {
+  background-color: #DC3545;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+.btn-red:hover {
+  opacity: 1;
+}
+
 header {
   width: 100%;
   min-width: 320px;
@@ -253,6 +264,61 @@ header > .container .brand {
 }
 #services .cards .card span {
   text-align: justify;
+}
+
+.hire-me {
+  width: 100%;
+  background-color: #222;
+}
+.hire-me > .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3.75rem 1rem;
+  color: #fff;
+  row-gap: 1rem;
+}
+.hire-me > .container p {
+  text-align: center;
+}
+.hire-me > .container .btn-red {
+  border-radius: 1rem;
+  padding: 0.5rem 1.5rem;
+  width: 150px;
+  border: none;
+}
+.hire-me > .container .btn-red a {
+  color: #fff;
+}
+
+#works {
+  width: 100%;
+}
+#works .container ul {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+#works .container ul li a {
+  color: #222;
+}
+#works .container ul li a:hover {
+  color: #DC3545;
+}
+#works .container .portfolio-images {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+#works .container .portfolio-images img {
+  width: 136px;
+  height: 136px;
+  object-fit: cover;
+  object-position: left;
 }
 
 main .hero {
