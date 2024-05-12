@@ -1,0 +1,48 @@
+// Imports config
+@use 'sass:math';
+@use '../config/variables';
+
+// functions
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+// ____________________________________________________________
+#contact {
+    width: 100%;
+
+    .container {
+        form {
+            margin-top: converter(24);
+            display: flex;
+            flex-direction: column;
+            row-gap: converter(8);
+
+            input {
+                width: 100%;
+                height: converter(32);
+                font-size: converter(16);
+                padding: converter(8);
+                border-radius: converter(8);
+                border: 1px solid variables.$gray;
+            }
+
+            textarea {
+                height: 100px;
+                resize: none;
+                font-size: converter(16);
+                padding: converter(8);
+                border-radius: converter(8);
+                border: 1px solid variables.$gray;
+            }
+
+            button {
+                border: none;
+                border-radius: converter(16);
+                padding: converter(8) converter(24);
+                width: 200px;
+                margin-top: converter(16);
+            }
+        }
+    }
+}

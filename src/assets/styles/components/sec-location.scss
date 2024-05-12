@@ -1,0 +1,39 @@
+// Imports config
+@use 'sass:math';
+@use '../config/variables';
+
+// functions
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+// ____________________________________________________________
+#location {
+    width: 100%;
+    background-color: variables.$grayDark;
+
+    .container {
+        row-gap: converter(24);
+
+        .maps,
+        .tel,
+        .email {
+            text-align: center;
+            row-gap: converter(8);
+            display: flex;
+            flex-direction: column;
+        }
+
+        span {
+            color: variables.$white;
+            font-size: converter(32);
+        }
+
+        address,
+        .phone,
+        .email {
+            color: variables.$white;
+            font-size: converter(16);
+        }
+    }
+}
