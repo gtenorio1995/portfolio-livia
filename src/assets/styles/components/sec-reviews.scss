@@ -92,3 +92,93 @@
         }
     }
 }
+
+// Media
+
+@media screen and (min-width: 768px) {
+    #reviews {
+        .container {
+            >.title__section {
+                margin-top: converter(24);
+            }
+
+            // .cards-review {
+            //     margin-top: converter(32);
+            //     display: flex;
+            //     justify-content: center;
+
+            //     .card-review {
+            //         width: 300px;
+            //         display: flex;
+            //         flex-direction: column;
+            //         padding: converter(16);
+            //         background-color: variables.$white;
+            //         border-radius: converter(8);
+            //         margin: 0;
+
+            //         span {
+            //             width: 100%;
+            //             display: flex;
+            //             justify-content: center;
+            //             align-items: center;
+            //             padding: converter(16);
+
+            //             img {
+            //                 width: converter(40);
+            //             }
+            //         }
+
+            //         p {
+            //             text-align: justify;
+            //         }
+
+            //         picture {
+            //             width: 100%;
+            //             display: flex;
+            //             justify-content: center;
+            //             align-items: center;
+            //             padding: converter(8);
+
+            //             img {
+            //                 width: 100px;
+            //                 height: 100px;
+            //                 border-radius: 100px;
+            //                 border: none;
+            //                 object-fit: cover;
+            //                 object-position: top;
+            //             }
+            //         }
+
+            //         .author {
+            //             text-align: center;
+            //             width: 100%;
+            //             font-weight: 600;
+            //             color: variables.$red;
+            //         }
+
+            //     }
+            // }
+
+            // .marks {
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            //     width: 100%;
+            //     padding: converter(16) 0;
+            //     column-gap: converter(8);
+
+            //     .mark {
+            //         width: converter(16);
+            //         height: converter(16);
+            //         border: none;
+            //         border-radius: converter(16);
+            //         background-color: variables.$white;
+
+            //         &.clicked {
+            //             background-color: variables.$red;
+            //         }
+            //     }
+            // }
+        }
+    }
+}

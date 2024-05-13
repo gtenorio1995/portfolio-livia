@@ -55,3 +55,23 @@ main {
         border: 1px solid variables.$gray;
     }
 }
+
+// Medias
+
+@media screen and (min-width: 768px) {
+    main {
+        .hero {
+            div {
+                bottom: converter(250);
+
+                h1 {
+                    font-size: converter(48);
+                }
+
+                .second-title {
+                    font-size: converter(24);
+                }
+            }
+        }
+    }
+}

@@ -25,7 +25,6 @@
             padding-bottom: converter(16);
 
             li {
-
                 a {
                     color: variables.$grayDark;
 
@@ -48,6 +47,25 @@
                 height: 136px;
                 object-fit: cover;
                 object-position: left;
+            }
+        }
+    }
+}
+
+// Media
+
+@media screen and (min-width:768px) {
+    #works {
+        .container {
+            >.title__section {
+                margin-top: converter(24);
+            }
+
+            .portfolio-images {
+                img {
+                    width: 350px;
+                    height: 350px;
+                }
             }
         }
     }

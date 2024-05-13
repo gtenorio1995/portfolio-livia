@@ -178,6 +178,11 @@ header > .container .brand {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  header > .container nav ul li a {
+    padding-inline: 18.75rem;
+  }
+}
 #about {
   width: 100%;
 }
@@ -247,6 +252,34 @@ header > .container .brand {
   opacity: 1;
 }
 
+@media screen and (min-width: 768px) {
+  #about > .container > .title__section {
+    margin-top: 1.5rem;
+  }
+  #about > .container .container-768 {
+    display: flex;
+    gap: 1.25rem;
+  }
+  #about > .container picture img {
+    width: 300px;
+    height: 300px;
+  }
+  #about > .container .content-768 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #about > .container .btns {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+  #about > .container .btns button {
+    padding: 1rem 4rem;
+    border-radius: 1.5rem;
+    border: none;
+  }
+}
 #services {
   width: 100%;
   background-color: #ccc;
@@ -268,11 +301,26 @@ header > .container .brand {
   padding: 1rem;
   background-color: #fff;
   row-gap: 1rem;
+  height: 300px;
 }
 #services .cards .card span {
   text-align: justify;
 }
 
+@media screen and (min-width: 768px) {
+  #services .container > .title__section {
+    margin-top: 1.5rem;
+  }
+  #services .container .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1.25rem;
+  }
+  #services .container .cards .card {
+    max-width: 45%;
+    border-radius: 0.5rem;
+  }
+}
 .hire-me {
   width: 100%;
   background-color: #222;
@@ -333,6 +381,15 @@ header > .container .brand {
   object-position: left;
 }
 
+@media screen and (min-width: 768px) {
+  #works .container > .title__section {
+    margin-top: 1.5rem;
+  }
+  #works .container .portfolio-images img {
+    width: 350px;
+    height: 350px;
+  }
+}
 #reviews {
   width: 100%;
   background-color: #ccc;
@@ -404,6 +461,11 @@ header > .container .brand {
   background-color: #DC3545;
 }
 
+@media screen and (min-width: 768px) {
+  #reviews .container > .title__section {
+    margin-top: 1.5rem;
+  }
+}
 #contact {
   width: 100%;
 }
@@ -437,6 +499,14 @@ header > .container .brand {
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  #contact {
+    width: 100%;
+  }
+  #contact .container > .title__section {
+    margin-top: 1.5rem;
+  }
+}
 #location {
   width: 100%;
   background-color: #222;
@@ -500,6 +570,17 @@ main hr {
   border: 1px solid #ccc;
 }
 
+@media screen and (min-width: 768px) {
+  main .hero div {
+    bottom: 15.625rem;
+  }
+  main .hero div h1 {
+    font-size: 3rem;
+  }
+  main .hero div .second-title {
+    font-size: 1.5rem;
+  }
+}
 footer {
   width: 100%;
   padding: 1.25rem;

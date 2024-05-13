@@ -90,3 +90,46 @@
     }
 
 }
+
+// Medias
+
+@media screen and (min-width: 768px) {
+    #about {
+        >.container {
+            >.title__section {
+                margin-top: converter(24);
+            }
+
+            .container-768 {
+                display: flex;
+                gap: converter(20);
+            }
+
+            picture {
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
+            .content-768 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+
+            .btns {
+                display: flex;
+                flex-direction: row;
+                gap: converter(48);
+
+                button {
+                    padding: converter(16) converter(64);
+                    border-radius: converter(24);
+                    border: none;
+                }
+            }
+        }
+    }
+}

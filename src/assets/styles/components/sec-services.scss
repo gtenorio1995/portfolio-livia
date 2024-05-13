@@ -29,9 +29,33 @@
             padding: converter(16);
             background-color: variables.$white;
             row-gap: converter(16);
+            height: 300px;
 
             span {
                 text-align: justify;
+            }
+        }
+    }
+}
+
+// Media
+
+@media screen and (min-width:768px) {
+    #services {
+        .container {
+            >.title__section {
+                margin-top: converter(24);
+            }
+
+            .cards {
+                flex-direction: row;
+                flex-wrap: wrap;
+                column-gap: converter(20);
+
+                .card {
+                    max-width: 45%;
+                    border-radius: converter(8);
+                }
             }
         }
     }
