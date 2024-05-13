@@ -68,7 +68,9 @@ p {
 
 .container {
   min-width: 320px;
+  max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
   padding: 0 1rem 1.25rem;
   display: flex;
   flex-direction: column;
@@ -182,6 +184,93 @@ header > .container .brand {
   header > .container nav ul li a {
     padding-inline: 18.75rem;
   }
+  header > .container .brand {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  header > .container .brand img {
+    width: 100px;
+    position: absolute;
+    right: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    background-color: #222;
+    padding: 1.25rem 0;
+  }
+  header > .container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  header > .container nav {
+    display: flex;
+    align-items: center;
+  }
+  header > .container nav button {
+    display: none;
+  }
+  header > .container nav ul {
+    position: static;
+    flex-direction: row;
+    top: 0rem;
+    right: 0;
+    justify-content: space-around;
+    height: inherit;
+    width: 100%;
+    min-width: 768px;
+    transform: translate3d(0, 0, 0);
+  }
+  header > .container nav ul li {
+    width: initial;
+    padding: 1rem 2rem;
+    text-align: center;
+    padding-block: 0rem;
+  }
+  header > .container nav ul li a {
+    padding-inline: 0rem;
+    padding-block: 0rem;
+  }
+  header > .container nav ul li.selected {
+    background-color: transparent;
+  }
+  header > .container nav ul li.selected a {
+    color: #DC3545;
+  }
+  header > .container nav ul li.selected::after {
+    content: "";
+    border-bottom: 1px solid #DC3545;
+    display: block;
+    margin-top: 0.5rem;
+    animation: animaBorder 0.7s;
+    width: 100%;
+  }
+  header > .container .brand {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  header > .container .brand img {
+    width: 100px;
+    position: absolute;
+    right: 1.5rem;
+  }
+  @keyframes animaBorder {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    50% {
+      width: 100%;
+      opacity: 1;
+    }
+    100% {
+      width: 0;
+      opacity: 0;
+    }
+  }
 }
 #about {
   width: 100%;
@@ -280,6 +369,12 @@ header > .container .brand {
     border: none;
   }
 }
+@media screen and (min-width: 1024px) {
+  #about > .container .btns {
+    flex-direction: row;
+    padding-bottom: 2rem;
+  }
+}
 #services {
   width: 100%;
   background-color: #ccc;
@@ -319,6 +414,11 @@ header > .container .brand {
   #services .container .cards .card {
     max-width: 45%;
     border-radius: 0.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #services .container .cards {
+    padding-bottom: 2rem;
   }
 }
 .hire-me {
@@ -388,6 +488,23 @@ header > .container .brand {
   #works .container .portfolio-images img {
     width: 350px;
     height: 350px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #works .container > .title__section {
+    margin-top: 1.5rem;
+  }
+  #works .container ul {
+    justify-content: flex-start;
+    column-gap: 1.25rem;
+    margin-left: 1.25rem;
+  }
+  #works .container .portfolio-images {
+    padding-bottom: 2rem;
+  }
+  #works .container .portfolio-images img {
+    width: 480px;
+    height: 480px;
   }
 }
 #reviews {
@@ -507,6 +624,41 @@ header > .container .brand {
     margin-top: 1.5rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  #contact {
+    width: 50%;
+  }
+  #contact .container form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  #contact .container form input {
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  #contact .container form textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  #contact .container form button {
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    width: 200px;
+    margin-top: 1rem;
+  }
+}
 #location {
   width: 100%;
   background-color: #222;
@@ -538,6 +690,11 @@ header > .container .brand {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 1024px) {
+  #location {
+    width: 50%;
+  }
+}
 main .hero {
   width: 100%;
   position: relative;
@@ -563,6 +720,20 @@ main .hero div .second-title {
   font-weight: 600;
   text-transform: uppercase;
 }
+main .hero .text-animate::after {
+  content: "|";
+  margin-left: 0.125rem;
+  opacity: 1;
+  animation: animatexto 0.7s infinite;
+}
+@keyframes animatexto {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 main > .container {
   flex-direction: column;
 }
@@ -579,6 +750,12 @@ main hr {
   }
   main .hero div .second-title {
     font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .hero img {
+    width: 100vw;
+    height: 100vh;
   }
 }
 footer {
@@ -615,6 +792,23 @@ footer .container .copy {
 footer .container .copy p {
   text-align: center;
   font-size: 0.875rem;
+}
+
+@media screen and (min-width: 1024px) {
+  footer > .container {
+    flex-direction: row-reverse;
+  }
+  footer > .container .redes {
+    width: 40%;
+    justify-content: center;
+  }
+  footer > .container .copy {
+    width: 60%;
+  }
+}
+#app main .div-contact {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=global.css.map */

@@ -80,7 +80,9 @@ p {
 
 .container {
     min-width: 320px;
+    max-width: 1200px;
     width: 100%;
+    margin: 0 auto;
     padding: 0 converter(16) converter(20);
 
     display: flex;

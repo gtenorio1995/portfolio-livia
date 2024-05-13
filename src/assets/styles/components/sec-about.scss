@@ -133,3 +133,14 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    #about {
+        >.container {
+            .btns {
+                flex-direction: row;
+                padding-bottom: converter(32);
+            }
+        }
+    }
+}

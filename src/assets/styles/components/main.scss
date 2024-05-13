@@ -45,6 +45,27 @@ main {
                 text-transform: uppercase;
             }
         }
+
+        .text-animate {
+            &::after {
+                content: '|';
+                margin-left: converter(2);
+                opacity: 1;
+                animation: animatexto .7s infinite;
+            }
+        }
+
+        @keyframes animatexto {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
     }
 
     >.container {
@@ -71,6 +92,17 @@ main {
                 .second-title {
                     font-size: converter(24);
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        .hero {
+            img {
+                width: 100vw;
+                height: 100vh;
             }
         }
     }

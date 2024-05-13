@@ -60,3 +60,13 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    #services {
+        .container {
+            .cards {
+                padding-bottom: converter(32);
+            }
+        }
+    }
+}

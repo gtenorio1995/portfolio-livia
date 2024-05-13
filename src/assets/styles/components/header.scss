@@ -135,6 +135,111 @@ header {
                     }
                 }
             }
+
+            .brand {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                img {
+                    width: 100px;
+                    position: absolute;
+                    right: converter(24);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        background-color: variables.$grayDark;
+        padding: converter(20) 0;
+
+        >.container {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 converter(16);
+
+            nav {
+                display: flex;
+                align-items: center;
+
+                button {
+                    display: none;
+                }
+
+                ul {
+                    position: static;
+                    flex-direction: row;
+                    top: converter(0);
+                    right: 0;
+                    justify-content: space-around;
+                    height: inherit;
+                    width: 100%;
+                    min-width: 768px;
+                    transform: translate3d(0, 0, 0);
+
+                    li {
+                        width: initial;
+                        padding: converter(16) converter(32);
+                        text-align: center;
+                        padding-block: converter(0);
+
+                        a {
+                            padding-inline: converter(0);
+                            padding-block: converter(0);
+                        }
+
+                        &.selected {
+                            background-color: transparent;
+
+                            a {
+                                color: variables.$red;
+                            }
+
+                            &::after {
+                                content: '';
+                                border-bottom: 1px solid variables.$red;
+                                display: block;
+                                margin-top: converter(8);
+                                animation: animaBorder .7s;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .brand {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                img {
+                    width: 100px;
+                    position: absolute;
+                    right: converter(24);
+                }
+            }
+        }
+    }
+
+    @keyframes animaBorder {
+
+        0% {
+            width: 0;
+            opacity: 0;
+        }
+
+        50% {
+            width: 100%;
+            opacity: 1;
+        }
+
+        100% {
+            width: 0;
+            opacity: 0;
         }
     }
 }

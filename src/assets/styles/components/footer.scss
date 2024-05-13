@@ -52,3 +52,20 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    footer {
+        >.container {
+            flex-direction: row-reverse;
+
+            .redes {
+                width: 40%;
+                justify-content: center;
+            }
+
+            .copy {
+                width: 60%;
+            }
+        }
+    }
+}
