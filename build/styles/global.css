@@ -809,6 +809,16 @@ footer .container .copy p {
 #app main .div-contact {
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  #app main .div-contact {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=global.css.map */
